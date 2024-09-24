@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import profileLogo from '../assets/profile-image.png';
 
 function CoachLogin() {
     const [coachId, setCoachId] = useState('');
@@ -33,9 +34,9 @@ function CoachLogin() {
             <div className="bg-black p-8 rounded-lg shadow-lg w-full max-w-sm text-center">
                 {/* Icon */}
                 <img
-                    src="/path-to-your-image.png" // Replace with the path to your image
+                    src={profileLogo} // Replace with the path to your image
                     alt="Life Coach Icon"
-                    className="w-16 h-16 mb-4 mx-auto"
+                    className="w-16 h-16 mb-4 mx-auto rounded-full"
                 />
 
                 {/* Title */}
